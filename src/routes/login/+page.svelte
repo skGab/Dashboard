@@ -4,14 +4,8 @@
 	import logo from '$lib/assets/logo.png';
 	import Google from '$lib/components/icon/Google.svelte';
 
-	let email = '';
-
-	const handleEmailSignIn = () => {
-		signIn('email', { email, callbackUrl: '/protected' });
-	};
-
 	const handleGoogleSignIn = () => {
-		signIn('google', { callbackUrl: '/protected' });
+		signIn('google', { callbackUrl: '/terminal' });
 	};
 
 	const handleSignOut = () => {
@@ -66,13 +60,6 @@
 		text-align: center;
 	}
 
-	input {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 0.75rem;
-		border: 1px solid #ff9900;
-	}
-
 	button {
 		background: none;
 		margin-top: 1.5rem;
@@ -85,30 +72,6 @@
 		border: 1px solid #ff9900;
 		border-radius: 0.125rem;
 		transition-timing-function: all 225ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	form button {
-		margin-top: 1rem;
-		background-color: #ff9900;
-		color: dark;
-	}
-
-	.divider-container {
-		display: flex;
-		margin-top: 1.5rem;
-		gap: 0.5rem;
-		align-items: center;
-	}
-
-	.divider-container div {
-		flex: 1 1 0%;
-		height: 1px;
-		background-color: black;
-	}
-
-	.divider-container span {
-		font-size: 0.75rem;
-		line-height: 1rem;
 	}
 
 	.signout-container {
