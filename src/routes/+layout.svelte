@@ -19,7 +19,7 @@
 	></script>
 </svelte:head>
 
-<main class="d-flex py-3 align-items-center">
+<main class="d-flex align-items-center py-3">
 	<div class="container">
 		<slot />
 	</div>
