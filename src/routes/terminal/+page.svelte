@@ -70,7 +70,7 @@
 		}, intervalTimeMs);
 
 		try {
-			const apiResponse = await fetch('http://localhost:3000/integration/logs');
+			const apiResponse = await fetch('https://monday-integration-service-edejqdvmyq-rj.a.run.app/integration/logs');
 			if (apiResponse.ok) {
 				const dados = await apiResponse.json();
 				const dadosFormatados = formatarDados(dados);
